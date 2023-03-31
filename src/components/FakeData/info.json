@@ -1,0 +1,41 @@
+[
+    {
+        "id":"1",
+    "Author name": "Raju Rastogi",
+    "Blog title":"How to get your first job as a self-taught programmer",
+    "Blog cover image":"https://unsplash.com/photos/Bj6ENZDMSDY",
+    "Author image":"https://unsplash.com/photos/c_GmwfHBDzk",
+    "Read time":"05 min read",
+    "Publish Date":"Mar 14 (4 Days ago)"
+    },
+
+    {
+        "id":"2",
+    "Author name": "Mrs. Setara Begum",
+    "Blog title":"How to get your first job as a self-taught programmer",
+    "Blog cover image":"https://unsplash.com/photos/oZMUrWFHOB4",
+    "Author image":"https://unsplash.com/photos/c_GmwfHBDzk",
+    "Read time":"05 min read",
+    "Publish Date":"Mar 14 (4 Days ago)"
+    },
+
+    {
+        "id":"3",
+    "Author name": "Mina Mostofa",
+    "Blog title":"How to get your first job as a self-taught programmer",
+    "Blog cover image":"https://unsplash.com/photos/Agx5_TLsIf4",
+    "Author image":"https://unsplash.com/photos/c_GmwfHBDzk",
+    "Read time":"10 min read",
+    "Publish Date":"Mar 14 (4 Days ago)"
+    },
+    
+    {
+        "id":"4",
+    "Author name": "Munni Saha",
+    "Blog title":"How to get your first job as a self-taught programmer",
+    "Blog cover image":"https://unsplash.com/photos/mCj7UinqOYQ",
+    "Author image":"https://unsplash.com/photos/c_GmwfHBDzk",
+    "Read time":"20 min read",
+    "Publish Date":"Mar 14 (4 Days ago)"
+    }
+]
