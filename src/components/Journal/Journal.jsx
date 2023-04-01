@@ -4,7 +4,8 @@ import Blog from '../Blog/Blog';
 
 const Journal = () => {
     const [blogs,setBlogs] = useState([]);
-    const [times, setTimes] = useState([])
+    const [times, setTimes] = useState([]);
+    const [articles, setArticles] = useState([]);
 
     useEffect(()=>{
         fetch('info.json')
@@ -12,11 +13,13 @@ const Journal = () => {
         .then(data => setBlogs(data))
     },[]);
 
-
-    let totalTime = 0;
+    const bookmarkedArticle = (article) => {
+        const newArticle = [...articles,article];
+        setArticles(newArticle)
+    }
+    
     const sumOfTime = (time) => {
        const newTime = [...times,time];
-        // totalTime + time;
         setTimes(newTime)
     }
     return (
@@ -27,18 +30,24 @@ const Journal = () => {
                     key={blog.id}
                     blog ={blog}
                     sumOfTime={sumOfTime}
+                    bookmarkedArticle = {bookmarkedArticle}
                 >
-
                 </Blog>
                 )
 
              }
             </div>
             <div className='bookmarks-container'>
-                <div>
+                <div >
                     <h2>Spent time on read:{times.length}</h2>
                 </div>
-            <h3>hello from the other side</h3>
+                <div>
+                    <h2>Bookmarked Blogs:{articles.length}</h2>
+                    {/* {
+                        articles.map(article => article.title)
+                    } */}
+
+                </div>
             </div>
 
            

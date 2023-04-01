@@ -1,12 +1,13 @@
 import React from 'react';
 import './Blog.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Blog = (props) => {
-    console.log(props);
+   
     const {name,title,image,img,time,date}= props.blog;
 
+    const bookmarkedArticle = props.bookmarkedArticle
     const sumOfTime = props.sumOfTime
     
     return (
@@ -25,7 +26,7 @@ const Blog = (props) => {
                 <div className='time-to-read'>
                     <p>{time} min read</p>
                     
-                    <p><FontAwesomeIcon icon={faBookmark} /></p>
+                    <p onClick={()=>{bookmarkedArticle()}}><FontAwesomeIcon icon={faBookmark} /></p>
 
                 </div>
 
