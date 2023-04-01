@@ -38,14 +38,11 @@ const Journal = () => {
              }
             </div>
             <div className='bookmarks-container'>
-                <div >
+                <div className='reading-time'>
                     <h2>Spent time on read:{times.length}</h2>
                 </div>
                 <div>
                     <h2>Bookmarked Blogs:{articles.length}</h2>
-                    {/* {
-                        articles.map(article => article.title)
-                    } */}
 
                 </div>
             </div>
