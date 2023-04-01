@@ -2,10 +2,11 @@ import React from 'react';
 import './Blog.css'
 
 const Blog = (props) => {
+    console.log(props);
     const {name,title,image,img,time,date}= props.blog;
 
-    let totalTime = 0;
-    const sumOfTime = () => totalTime + time;
+    const sumOfTime = props.sumOfTime
+    
     return (
         <div className='blog-container'>
             <img  src={image} alt="" />
@@ -27,6 +28,7 @@ const Blog = (props) => {
             
             <h2>{title}</h2>
             <div className='sum-of-time'>
+                
                 <h4 onClick={()=>{sumOfTime()}}>Mark as read</h4>
             </div>
 
