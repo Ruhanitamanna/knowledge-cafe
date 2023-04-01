@@ -1,0 +1,27 @@
+.wallpaper{
+
+}
+
+.blog-container{
+    width: 845px;
+}
+.blog-container img {
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+.name-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-name-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-name-section img{
+    width: 50px;
+    height: 35px;
+    border-radius: 50%;
+}

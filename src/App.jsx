@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
+import Blog from './components/Blog/Blog'
+import Journal from './components/Journal/Journal'
 
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
+      {/* <Blog></Blog> */}
+      <Journal></Journal>
     </div>
   )
 }
